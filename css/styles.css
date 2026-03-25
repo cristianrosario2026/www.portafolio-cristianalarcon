@@ -11,6 +11,7 @@
             scroll-behavior: smooth;
         }
 
+
         /* *********************/
         /* seccion I N I C I O */
         /* *********************/
@@ -420,15 +421,17 @@
         }
 
         .btn-proyecto {
-            display: inline-block;
-            margin-top: 10px;
+            display: block;
+            margin: 10px auto 0;
             padding: 8px 15px;
+            width: fit-content;
             background-color: #00c3ff;
             color: #fff;
             text-decoration: none;
             border-radius: 20px;
             font-size: 14px;
             transition: 0.3s;
+            text-align: center;
         }
 
         .btn-proyecto:hover {
@@ -499,7 +502,7 @@
         }
 
         #contacto .btn-enviar:hover {
-            background-color: #ff5080;
+            background-color: #00c3ff;
             color: #fff;
         }
 
@@ -577,7 +580,51 @@
         /* seccion R E S P O N S I V E */
         /* *********************/
 
+        /* ============================= */
+        /* 📱 TABLET (hasta 1024px) */
+        /* ============================= */
+        @media screen and (max-width: 1024px) {
+
+            /* SOBRE MI */
+            #sobremi {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #sobremi .contenedor-foto {
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            /* EXPERIENCIAS */
+            #experiencias .fila {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #experiencias .fila .experiencia {
+                width: 45%;
+                margin: 10px;
+            }
+
+            /* PORTAFOLIO */
+            #portafolio .fila {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #portafolio .fila .proyecto {
+                width: 45%;
+                margin: 10px;
+            }
+        }
+
+
+        /* ============================= */
+        /* 📱 CELULAR (hasta 800px) */
+        /* ============================= */
         @media screen and (max-width: 800px) {
+
             .redes {
                 display: none;
             }
@@ -588,10 +635,10 @@
 
             nav.responsive {
                 display: block;
-                background-color: rgba(0, 0, 0, .8);
+                background-color: rgba(0, 0, 0, .9);
                 width: 100%;
                 position: absolute;
-                top: 48px;
+                top: 60px;
                 left: 0;
                 padding: 10px 0;
             }
@@ -602,20 +649,23 @@
             }
 
             nav.responsive ul li {
-                margin: 5px 0;
+                margin: 10px 0;
             }
 
             #icono-nav {
                 display: block;
+                font-size: 25px;
+                cursor: pointer;
             }
 
+            /* INICIO */
             #inicio .contenido .presentacion h2 {
-                font-size: 40px;
+                font-size: 30px;
             }
 
-            /* seccion SOBRE MI */
+            /* SOBRE MI */
             #sobremi {
-                padding: 50px 0;
+                padding: 50px 15px;
                 display: block;
             }
 
@@ -628,8 +678,8 @@
                 padding: 8px;
             }
 
-            #sobremi .sobremi .titulo-seccion {
-                text-align: center;
+            #sobremi .sobremi {
+                margin: 0;
             }
 
             #sobremi .sobremi h2 {
@@ -637,44 +687,48 @@
                 text-align: center;
             }
 
-            /* seccion MIS SERVICIOS */
-            #servicios {
-                padding: 50px 15px;
+            /* EXPERIENCIAS */
+            #experiencias .fila {
+                flex-direction: column;
+                align-items: center;
             }
 
-            #servicios .fila {
-                display: block;
+            #experiencias .fila .experiencia {
+                width: 90%;
+                margin: 10px 0;
             }
 
-            #servicios .fila .servicio {
-                margin: 10px auto;
-            }
-
-            /* seccion HABLIDADES MI */
+            /* SKILLS */
             .contenedor-skills {
                 padding: 50px 20px;
             }
 
-            /* seccion PORTFOLIO */
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            /* PORTAFOLIO */
             #portafolio {
                 padding: 50px 0;
             }
 
             #portafolio .fila {
-                display: block;
+                flex-direction: column;
+                align-items: center;
             }
 
             #portafolio .fila .proyecto {
-                margin: 10px auto;
+                width: 90%;
+                margin: 10px 0;
             }
 
-            /* seccion CONTACTO */
+            /* CONTACTO */
             #contacto {
                 padding: 50px 15px;
             }
 
             #contacto .contenedor-form .mitad {
-                margin-bottom: 15px;
                 display: block;
             }
 
@@ -682,4 +736,31 @@
                 width: 100%;
                 margin-bottom: 15px;
             }
+        }
+
+
+
+
+        /* ============================= */
+        /* 📱 CELULAR PEQUEÑO (hasta 500px) */
+        /* ============================= */
+        @media screen and (max-width: 500px) {
+
+            #inicio .contenido .presentacion h2 {
+                font-size: 24px;
+            }
+
+            #inicio .contenido .presentacion p {
+                font-size: 14px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
