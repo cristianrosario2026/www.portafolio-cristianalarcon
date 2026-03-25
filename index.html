@@ -3,276 +3,335 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Cristian Alarcón</title>
-    <link rel="icon" href="img/logo.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="assets/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>C</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio">INICIO</a></li>
+                            <li><a href="#sobremi">SOBRE MI</a></li>
+                            <li><a href="#experiencias">EXPERIENCIA</a></li>
+                            <li><a href="#skills">TECNOLOGÍAS</a></li>
+                            <li><a href="#portafolio">PORTAFOLIO</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="container">
-            <div>
-
-                <img src="img/logo.jpg">
-
-                <!-- BOTÓN HAMBURGUESA -->
-                <button class="menu-toggle">☰</button>
-
-                <!-- MENÚ -->
-                <div class="menu">
-                    <a href="#about">Sobre mi</a>
-                    <a href="#projects">Proyectos</a>
-                    <a href="#experience">Experiencia</a>
-                    <a href="#skills">Tecnologías</a>
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
-
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Cristian Alarcón</span>, Desarrollador Web</h2>
+                <p class="descripcion">Desarrollador Web | Diseñador</p>
+                <a href="#portafolio">Ir a Portafolio</a>
             </div>
         </div>
-    </nav>
-
-    <!-- HERO -->
-    <section id="about">
-
-        <div class="container">
-
-            <div>
-                <img src="img/perfil.jpg">
-            </div>
-
-            <div style="text-align:center;">
-                <h1>Cristian Alarcón</h1>
-
-                <a href="https://github.com/cristianrosario2026">
-                    <i class="fa-brands fa-github"></i>
-                    Github
-                </a>
-            </div>
-
-        </div>
-
     </section>
 
-    <!-- PROYECTOS -->
-    <section id="projects">
-
-        <h2>Proyectos</h2>
-
-        <div class="container">
-
-            <div>
-                <img src="img/barberia.png">
-
-                <div>
-                    <h3>Página Web Barberia</h3>
-                    <p>Sitio web desarrollado para una barberia.</p>
-                    <a href="https://pruebabarberiavercel.vercel.app/">Ver sitio web</a>
-                </div>
-            </div>
-
-            <div>
-                <img src="img/registro.png">
-
-                <div>
-                    <h3>Sistema Web</h3>
-                    <p>Sistema de registro de estudiantes para una sala de cómputo.</p>
-                    <a href="https://registro-estudiantes-phi.vercel.app/">Ver sistema web</a>
-                </div>
-            </div>
-
-            <div>
-                <img src="img/agencia.png">
-
-                <div>
-                    <h3>Página Web Agencia de viajes.</h3>
-                    <p>Sitio web desarrollado para una agencia de viajes.</p>
-                    <a href="https://agencia-de-viajes-psi.vercel.app/">Ver sitio web</a>
-                </div>
-            </div>
-
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="images/perfil.jpg" alt="">
         </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Cristian Alarcón</span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Soy desarrollador web enfocado en crear páginas modernas,
+                rápidas y responsivas. Trabajo con HTML, CSS y JavaScript.</p>
 
+            <a href="#">Descargar CV</a>
+        </div>
     </section>
 
-    <!-- EXPERIENCIA -->
-    <section id="experience">
-
-        <h2>Experiencia</h2>
-
-        <div class="container">
-
-            <!-- TEXTO -->
-            <div>
-                <h3 style="font-size:40px; margin-bottom:20px;">¿Por qué tengo experiencia en esto?</h3>
-
-                <p>
-                    Me gusta mucho el mantenimiento de hardware, desarrollo web
-                    y todo lo relacionado con la tecnología, porque desde niño
-                    soñaba con tener una carrera de computación y me llamaba la atencion las computadoras.
-                </p>
-
-                <p style="margin-top:20px;">
-
-                    Me gusta aprender cosas nuevas relacionadas con la tecnología;
-                    siento que es una ciencia que se complementa con mi personalidad.
+    <!-- SECCION EXPERIENCIA -->
+    <section id="experiencias">
+        <h3 class="titulo-seccion">EXPERIENCIA</h3>
+        <div class="fila">
+            <div class="experiencia">
+                <span class="icono"> <i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <h4>Mantenimiento de Hardware</h4>
+                <hr>
+                <ul class="experiencias-tag">
+                    <li>Dic. 2023</li>
+                    <li>-</li>
+                    <li>Feb. 2024</li>
+                </ul>
+                <p>Aprendí ensamblaje, reparación y mantenimientos de equipos de computación.
                 </p>
             </div>
-
-            <!-- TIMELINE -->
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <h3>Mantenimiento de Hardware</h3>
-                    <span>Dic 2023 - Feb 2024</span>
-                    <p>
-                        Aprendí ensamblaje, reparación y mantenimientos de equipos de computación.
-                    </p>
-                </div>
-
-                <div class="timeline-item">
-                    <h3>Practicante en TiimTecnología</h3>
-                    <span>Mar 2025 - Jun 2025</span>
-                    <p>
-                        Apoyo en desarrollo de software a la medida (ventas, inventarios) y diseño web profesional.
-                    </p>
-                </div>
-
-                <div class="timeline-item">
-                    <h3>Desarrollo Web</h3>
-                    <span>Feb 2026 - Actualidad</span>
-                    <p>
-                        Desarrollo de proyectos personales y sitios web.
-                    </p>
-                </div>
-
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-laptop-code"></i></span>
+                <h4>Practicante en TiimTecnología</h4>
+                <hr>
+                <ul class="experiencias-tag">
+                    <li>Mar. 2025</li>
+                    <li>-</li>
+                    <li>Jun. 2025</li>
+                </ul>
+                <p>Apoyo en desarrollo de software a la medida (ventas, inventarios) y diseño web profesional.
+                </p>
             </div>
-
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-globe"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="experiencias-tag">
+                    <li>Feb. 2026</li>
+                    <li>-</li>
+                    <li>Actualidad</li>
+                </ul>
+                <p>Desarrollo de proyectos personales y sitios web.
+                </p>
+            </div>
         </div>
-
+        <div class="fila">
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Otro servicio</h4>
+                <hr>
+                <ul class="experiencias-tag">
+                    <li>2026</li>
+                    <li>-</li>
+                    <li>2026</li>
+                </ul>
+                <p>Descripcion de experiencia
+                </p>
+            </div>
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-pen-nib"></i></span>
+                <h4>Otro servicio</h4>
+                <hr>
+                <ul class="experiencias-tag">
+                    <li>2026</li>
+                    <li>-</li>
+                    <li>2026</li>
+                </ul>
+                <p>Descripcion de experiencia
+                </p>
+            </div>
+            <div class="experiencia">
+                <span class="icono"><i class="fa-solid fa-briefcase"></i></span>
+                <h4>Otro servicio</h4>
+                <hr>
+                <ul class="experiencias-tag">
+                    <li>2026</li>
+                    <li>-</li>
+                    <li>2026</li>
+                </ul>
+                <p>Descripcion de experiencia
+                </p>
+            </div>
+        </div>
     </section>
 
-
-    <!-- SKILLS -->
-    <section id="skills">
-
-        <h2>Tecnologías y Herramientas</h2>
-
-        <div class="container">
-
-            <div>
-                <img src="icons/windows.png">
-                <p>Windows</p>
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3 class="titulo-seccion">TECNOLOGÍAS Y HERRAMIENTAS</h3>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="assets/windows.png">
+                <h3>Windows</h3>
             </div>
-
-            <div>
-                <img src="icons/vscode.png">
-                <p>VS Code</p>
+            <div class="skill-card">
+                <img src="assets/vscode.png">
+                <h3>VS Code</h3>
             </div>
-
-            <div>
-                <img src="icons/vsstudio2022.png">
-                <p>VS 2022</p>
+            <div class="skill-card">
+                <img src="assets/vsstudio2022.png">
+                <h3>VS 2022</h3>
             </div>
-
-            <div>
-                <img src="icons/html.png">
-                <p>HTML</p>
+            <div class="skill-card">
+                <img src="assets/html.png">
+                <h3>HTML</h3>
             </div>
-
-            <div>
-                <img src="icons/css.png">
-                <p>CSS</p>
+            <div class="skill-card">
+                <img src="assets/css.png">
+                <h3>CSS</h3>
             </div>
-
-            <div>
-                <img src="icons/javascript.png">
-                <p>JavaScript</p>
+            <div class="skill-card">
+                <img src="assets/javascript.png">
+                <h3>JavaScript</h3>
             </div>
-
-            <div>
-                <img src="icons/tailwind.png">
-                <p>TailwindCSS</p>
+            <div class="skill-card">
+                <img src="assets/tailwind.png">
+                <h3>TailwindCSS</h3>
             </div>
-
-            <div>
-                <img src="icons/sass.png">
-                <p>Sass</p>
+            <div class="skill-card">
+                <img src="assets/sass.png">
+                <h3>Sass</h3>
             </div>
-
-            <div>
-                <img src="icons/astro.png">
-                <p>Astro</p>
+            <div class="skill-card">
+                <img src="assets/astro.png">
+                <h3>Astro</h3>
             </div>
-
-            <div>
-                <img src="icons/flowbite.svg">
-                <p>Flowbite</p>
+            <div class="skill-card">
+                <img src="assets/flowbite.svg">
+                <h3>Flowbite</h3>
             </div>
-
-            <div>
-                <img src="icons/github.png">
-                <p>GitHub</p>
+            <div class="skill-card">
+                <img src="assets/github.png">
+                <h3>GitHub</h3>
             </div>
-
-            <div>
-                <img src="icons/git.png">
-                <p>Git</p>
+            <div class="skill-card">
+                <img src="assets/git.png">
+                <h3>Git</h3>
             </div>
-
-            <div>
-                <img src="icons/vercel.png">
-                <p>Vercel</p>
+            <div class="skill-card">
+                <img src="assets/vercel.png">
+                <h3>Vercel</h3>
             </div>
-
         </div>
+    </div>
 
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/barberia.png" alt="">
+                <div class="info">
+                    <h4>Barberia</h4>
+                    <p>Sitio web con reservas y diseño profesional</p>
+                    <a href="https://pruebabarberiavercel.vercel.app/" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/registro.png" alt="">
+                <div class="info">
+                    <h4>Sistema de Estudiantes</h4>
+                    <p>CRUD con base de datos en Supabase</p>
+                    <a href="https://registro-estudiantes-phi.vercel.app/" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/agencia.png" alt="">
+                <div class="info">
+                    <h4>Agencia de Viajes</h4>
+                    <p>Landing page moderna con diseño atractivo</p>
+                    <a href="https://agencia-de-viajes-psi.vercel.app/" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto8.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- SECCTION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
     <footer>
-
-        <h3>Contacto</h3>
-
-        <p>
-            Puedes encontrarme en estas plataformas para cualquier información.
-        </p>
-
+        <p>Puedes encontrarme en estas plataformas para cualquier información.</p>
         <div style="margin:20px 0;">
 
-            <a href="https://github.com/cristianrosario2026">
+            <a href="https://github.com/cristianrosario2026" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
             </a>
 
-            <a href="https://instagram.com/cristianrosario30092000">
+            <a href="https://instagram.com/cristianrosario30092000" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="mailto:cristianrosario30092000@gmail.com">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cristianrosario30092000@gmail.com" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a href="https://wa.me/526681516491">
+            <a href="https://wa.me/526681516491" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
 
         </div>
-
-        <p>© 2025 Cristian Alarcón</p>
-
+        <p>© 2026 Cristian Alarcón. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        const toggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
-
-        toggle.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
-    </script>
-
+    <script src="js/script.js"></script>
 
 </body>
 
