@@ -118,14 +118,16 @@
             padding: 20px 25px;
             border: 2px solid #fff;
             border-radius: 50px;
-            color: #fff;
+            background-color: #00c3ff;
+            color: #000;
             font-weight: bold;
             text-transform: uppercase;
             transition: .5s;
         }
 
         #inicio .contenido .presentacion a:hover {
-            background-color: #00c3ff;
+            background-color: #fff;
+            color: #00c3ff;
         }
 
         #icono-nav {
@@ -206,11 +208,12 @@
             padding: 10px 20px;
             margin-top: 30px;
             transition: .5s;
+            background-color: #00c3ff;
         }
 
         #sobremi .sobremi a:hover {
-            background-color: #00c3ff;
-            color: #fff;
+            background-color: #fff;
+            color: #00c3ff;
         }
 
         /* *********************/
@@ -446,7 +449,7 @@
             padding: 8px 15px;
             width: fit-content;
             background-color: #00c3ff;
-            color: #fff;
+            color: #000;
             text-decoration: none;
             border-radius: 20px;
             font-size: 14px;
@@ -519,11 +522,13 @@
             cursor: pointer;
             transition: .5s;
             padding: 10px 15px !important;
+            background-color: #00c3ff;
+            color: #000;
         }
 
         #contacto .btn-enviar:hover {
-            background-color: #00c3ff;
-            color: #fff;
+            background-color: #fff;
+            color: #00c3ff;
         }
 
         /* *********************/
@@ -595,6 +600,75 @@
         footer a:nth-child(4):hover {
             background: #25d366;
         }
+
+
+
+        /* ============================= */
+        /* PAGINA GRACIAS */
+        /* ============================= */
+
+        .pagina-gracias {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+                url("../images/fondo-skills.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* CONTENIDO */
+        .pagina-gracias .contenido-gracias {
+            color: #fff;
+            max-width: 600px;
+            padding: 20px;
+            animation: aparecer 0.6s ease;
+        }
+
+        /* TEXTO */
+        .pagina-gracias h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .pagina-gracias p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+
+        /* BOTON */
+        .pagina-gracias .btn-enviar {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #000;
+            background: #00c3ff;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .pagina-gracias .btn-enviar:hover {
+            background: #fff;
+            color: #00c3ff;
+        }
+
+        /* ANIMACION */
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
 
         /* *********************/
         /* seccion R E S P O N S I V E */
@@ -725,7 +799,7 @@
 
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 14px;
+                gap: 15px;
             }
 
             /* PORTAFOLIO */

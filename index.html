@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristian Alarcón</title>
     <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="css/styles.css">
@@ -52,8 +52,10 @@
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, Soy <span>Cristian Alarcón</span> </h2>
             <h3>Desarrollador Web</h3>
-            <p>Soy desarrollador web enfocado en crear páginas modernas,
-                rápidas y responsivas. Trabajo con HTML, CSS y JavaScript.</p>
+            <p>Soy desarrollador web enfocado en crear páginas modernas, rápidas y adaptadas
+                a celulares, ideales para que tu negocio tenga presencia profesional y genere
+                más confianza en tus clientes. Trabajo con HTML, CSS, JavaScript y algunos
+                lenguajes más.</p>
 
             <a href="#">Descargar CV</a>
         </div>
@@ -96,7 +98,7 @@
                     <li>-</li>
                     <li>Actualidad</li>
                 </ul>
-                <p>Desarrollo de proyectos personales y sitios web.
+                <p>Desarrollo de proyectos personales de sitios web.
                 </p>
             </div>
         </div>
@@ -169,20 +171,12 @@
                 <h3>JavaScript</h3>
             </div>
             <div class="skill-card">
-                <img src="assets/tailwind.png">
-                <h3>TailwindCSS</h3>
-            </div>
-            <div class="skill-card">
                 <img src="assets/sass.png">
                 <h3>Sass</h3>
             </div>
             <div class="skill-card">
                 <img src="assets/astro.png">
                 <h3>Astro</h3>
-            </div>
-            <div class="skill-card">
-                <img src="assets/flowbite.svg">
-                <h3>Flowbite</h3>
             </div>
             <div class="skill-card">
                 <img src="assets/github.png">
@@ -209,7 +203,8 @@
                 <div class="info">
                     <h4>Barberia</h4>
                     <p>Sitio web con reservas y diseño profesional</p>
-                    <a href="https://pruebabarberiavercel.vercel.app/" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                    <a href="https://pruebabarberiavercel.vercel.app/" target="_blank" class="btn-proyecto">Ver
+                        proyecto</a>
                 </div>
             </div>
             <div class="proyecto">
@@ -218,7 +213,8 @@
                 <div class="info">
                     <h4>Sistema de Estudiantes</h4>
                     <p>CRUD con base de datos en Supabase</p>
-                    <a href="https://registro-estudiantes-phi.vercel.app/" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                    <a href="https://registro-estudiantes-phi.vercel.app/" target="_blank" class="btn-proyecto">Ver
+                        proyecto</a>
                 </div>
             </div>
             <div class="proyecto">
@@ -227,7 +223,8 @@
                 <div class="info">
                     <h4>Agencia de Viajes</h4>
                     <p>Landing page moderna con diseño atractivo</p>
-                    <a href="https://agencia-de-viajes-psi.vercel.app/" target="_blank" class="btn-proyecto">Ver proyecto</a>
+                    <a href="https://agencia-de-viajes-psi.vercel.app/" target="_blank" class="btn-proyecto">Ver
+                        proyecto</a>
                 </div>
             </div>
         </div>
@@ -289,17 +286,19 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contáctame ahora</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="https://formsubmit.co/cristianrosario30092000@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                    <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad" required>
+                    <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required>
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" name="tema" placeholder="Tema..." class="input-full" required>
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
-                        class="input-full"></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"
+                        required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
@@ -319,7 +318,8 @@
                 <i class="fa-brands fa-instagram"></i>
             </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cristianrosario30092000@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cristianrosario30092000@gmail.com" target="_blank"
+                rel="noopener noreferrer">
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
