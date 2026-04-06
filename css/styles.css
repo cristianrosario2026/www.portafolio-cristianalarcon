@@ -296,10 +296,10 @@
         }
 
         /* *********************/
-        /* seccion S K I L L S */
+        /* seccion T E C N O L O G Í A S */
         /* *********************/
 
-        .contenedor-skills {
+        .contenedor-tecnologías {
             background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -310,7 +310,7 @@
             text-align: center;
         }
 
-        #skills .titulo-seccion {
+        #tecnologías .titulo-seccion {
             text-align: center;
             font-size: 22px;
             text-transform: uppercase;
@@ -322,12 +322,12 @@
 
 
 
-        .contenedor-skills .skill {
+        .contenedor-tecnologías .tecnología {
             max-width: 600px;
             margin: 30px auto;
         }
 
-        .skills-grid {
+        .tecnologías-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
@@ -335,7 +335,7 @@
             padding: 0 20px;
         }
 
-        .skill-card {
+        .tecnología-card {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -345,7 +345,7 @@
             height: 180px;
             /* 🔥 tamaño fijo */
 
-            background: #252a2e;
+            background: #1e2225;
             border-radius: 15px;
             padding: 20px;
 
@@ -356,7 +356,7 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
-        .skill-card img {
+        .tecnología-card img {
             width: 55px;
             height: 55px;
             object-fit: contain;
@@ -366,13 +366,13 @@
             display: block;
         }
 
-        .skill-card h3 {
+        .tecnología-card h3 {
             color: white;
             font-size: 15px;
             text-align: center;
         }
 
-        .skill-card:hover {
+        .tecnología-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 0 20px rgb(252, 254, 255);
             border: 1px solid #fff;
@@ -380,7 +380,7 @@
 
 
         /* *********************/
-        /* seccion P O R T F O L I O */
+        /* seccion P O R T A F O L I O */
         /* *********************/
 
         #portafolio {
