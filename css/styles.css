@@ -152,6 +152,12 @@
             margin-right: 80px;
         }
 
+        #sobremi .contenedor-foto:hover {
+            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+        }
+    
+
+
         #sobremi .contenedor-foto img {
             padding: 20px;
             width: 100%;
