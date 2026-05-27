@@ -11,6 +11,10 @@
             scroll-behavior: smooth;
         }
 
+        body {
+            background-color: #fff;
+        }
+
 
         /* *********************/
         /* seccion I N I C I O */
