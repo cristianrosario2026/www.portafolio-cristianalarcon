@@ -11,35 +11,36 @@
 </head>
 
 <body>
-    <!-- SECCION INICIO -->
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>C</h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#experiencias">EXPERIENCIA</a></li>
-                            <li><a href="#tecnologías">TECNOLOGÍAS</a></li>
-                            <li><a href="#portafolio">PORTAFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
-                        </ul>
-                    </nav>
 
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>Cristian Alarcón</span>, Desarrollador Web</h2>
-                <p class="descripcion">Desarrollador Web | Diseñador</p>
-                <a href="#portafolio">Ir a Portafolio</a>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="contenido-header">
+            <h1>C</h1>
+            <nav id="nav">
+                <ul id="links">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#experiencias">EXPERIENCIA</a></li>
+                    <li><a href="#tecnologias">TECNOLOGÍAS</a></li>
+                    <li><a href="#portafolio">PORTAFOLIO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
+        </div>
+    </header>
+
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+        <div class="presentacion">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2>Soy <span>Cristian Alarcón</span>, Desarrollador Web</h2>
+            <p class="descripcion">Desarrollador Web | Diseñador</p>
+            <a href="#portafolio">Ir a Portafolio</a>
         </div>
     </section>
 
@@ -56,7 +57,6 @@
                 a celulares, ideales para que tu negocio tenga presencia profesional y genere
                 más confianza en tus clientes. Trabajo con HTML, CSS, JavaScript y algunos
                 lenguajes más.</p>
-
             <!-- <a href="#">Descargar CV</a> -->
         </div>
     </section>
@@ -105,58 +105,59 @@
     </section>
 
     <!-- SECCION TECNOLOGÍAS -->
-    <div class="contenedor-tecnologías" id="tecnologías">
-        <h3 class="titulo-seccion">TECNOLOGÍAS Y HERRAMIENTAS</h3>
-        <div class="tecnologías-grid">
-            <div class="tecnología-card">
-                <img src="assets/windows.png">
-                <h3>Windows</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/vscode.png">
-                <h3>VS Code</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/html.png">
-                <h3>HTML</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/css.png">
-                <h3>CSS</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/javascript.png">
-                <h3>JavaScript</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/sass.png">
-                <h3>Sass</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/astro.png">
-                <h3>Astro</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/github.png">
-                <h3>GitHub</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/git.png">
-                <h3>Git</h3>
-            </div>
-            <div class="tecnología-card">
-                <img src="assets/vercel.png">
-                <h3>Vercel</h3>
+    <section id="tecnologias">
+        <div class="contenedor-tecnologias">
+            <h3 class="titulo-seccion">TECNOLOGÍAS Y HERRAMIENTAS</h3>
+            <div class="tecnologias-grid">
+                <div class="tecnologia-card">
+                    <img src="assets/windows.png">
+                    <h3>Windows</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/vscode.png">
+                    <h3>VS Code</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/html.png">
+                    <h3>HTML</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/css.png">
+                    <h3>CSS</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/javascript.png">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/sass.png">
+                    <h3>Sass</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/astro.png">
+                    <h3>Astro</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/github.png">
+                    <h3>GitHub</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/git.png">
+                    <h3>Git</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <img src="assets/vercel.png">
+                    <h3>Vercel</h3>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- SECCION PORTAFOLIO -->
     <section id="portafolio">
         <h3 class="titulo-seccion">Mis Proyectos</h3>
         <div class="fila">
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="images/barberia.png" alt="">
                 <div class="info">
                     <h4>Barberia</h4>
@@ -166,7 +167,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="images/registro.png" alt="">
                 <div class="info">
                     <h4>Sistema de Estudiantes</h4>
@@ -176,7 +176,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="images/agencia.png" alt="">
                 <div class="info">
                     <h4>Agencia de Viajes</h4>
@@ -188,7 +187,6 @@
         </div>
         <div class="fila">
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="images/car-wash.png" alt="">
                 <div class="info">
                     <h4>Car Wash</h4>
@@ -198,7 +196,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="images/proyecto-pendiente.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
@@ -206,7 +203,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="images/proyecto-pendiente.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
