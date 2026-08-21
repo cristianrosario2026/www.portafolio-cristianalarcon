@@ -222,16 +222,37 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje, te responderé pronto.">
                 <input type="hidden" name="_replyto" value="email">
+
                 <div class="fila mitad">
-                    <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad" required>
-                    <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required>
+
+                    <div class="input-container">
+                        <input type="text" name="nombre" id="nombre" placeholder=" " required>
+                        <label for="nombre">Nombre Completo *</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="email" name="email" id="email" placeholder=" " required>
+                        <label for="email">Dirección de Email</label>
+                    </div>
+
                 </div>
+
                 <div class="fila">
-                    <input type="text" name="tema" placeholder="Tema a tratar..." class="input-full" required>
+
+                    <div class="input-container">
+                        <input type="text" name="tema" id="tema" placeholder=" " required>
+                        <label for="tema">Tema a tratar...</label>
+                    </div>
+
                 </div>
+
                 <div class="fila">
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"
-                        required></textarea>
+
+                    <div class="input-container">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder=" " required></textarea>
+                        <label for="mensaje">Tu Mensaje...</label>
+                    </div>
+
                 </div>
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>

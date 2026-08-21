@@ -82,7 +82,7 @@
         /* *********************/
         /* seccion I N I C I O */
         /* *********************/
-        
+
         #inicio {
             background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../images/fondo-inicio.jpg");
             background-size: cover;
@@ -166,7 +166,7 @@
         .contenedor-foto:hover {
             box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
         }
-    
+
         .contenedor-foto img {
             padding: 20px;
             width: 100%;
@@ -231,7 +231,7 @@
             color: #00c3ff;
         }*/
 
-        
+
         /* *********************/
         /* seccion E X P E R I E N C I A S */
         /* *********************/
@@ -298,7 +298,7 @@
             color: #000;
             margin-bottom: 25px;
         }
-        
+
         .fila .experiencia ul {
             list-style: none;
             display: flex;
@@ -471,7 +471,7 @@
             color: #00c3ff;
         }
 
-        
+
         /* *********************/
         /* seccion C O N T A C T O */
         /* *********************/
@@ -484,6 +484,63 @@
         .titulo-seccion {
             margin-bottom: 20px;
             color: #000;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .input-container input,
+        .input-container textarea {
+            width: 100%;
+        }
+
+        .input-container label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            padding: 0 5px;
+            color: #777;
+            transition: .3s;
+            pointer-events: none;
+        }
+
+        /* Para el textarea */
+        .input-container textarea+label {
+            top: 25px;
+        }
+
+        /* Cuando seleccionas el campo */
+        .input-container input:focus+label,
+        .input-container textarea:focus+label,
+
+        /* Cuando ya tiene contenido */
+        .input-container input:not(:placeholder-shown)+label,
+        .input-container textarea:not(:placeholder-shown)+label {
+            top: 0;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: #007bff;
+        }
+
+        .fila.mitad .input-container input {
+    padding: 20px 15px;
+    font-size: 16px;
+}
+
+        .fila.mitad .input-container {
+            width: 48%;
+        }
+
+        .fila:not(.mitad) .input-container {
+            width: 100%;
+        }
+
+        .input-container input,
+        .input-container textarea {
+            box-sizing: border-box;
         }
 
         .contenedor-form {
