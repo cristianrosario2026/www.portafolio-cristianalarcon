@@ -481,71 +481,18 @@
             background-color: #f3f3f3;
         }
 
-        .titulo-seccion {
+        #contacto .titulo-seccion {
             margin-bottom: 20px;
             color: #000;
-        }
-
-        .input-container {
-            position: relative;
-        }
-
-        .input-container input,
-        .input-container textarea {
-            width: 100%;
-        }
-
-        .input-container label {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: white;
-            padding: 0 5px;
-            color: #777;
-            transition: .3s;
-            pointer-events: none;
-        }
-
-        /* Para el textarea */
-        .input-container textarea+label {
-            top: 25px;
-        }
-
-        /* Cuando seleccionas el campo */
-        .input-container input:focus+label,
-        .input-container textarea:focus+label,
-
-        /* Cuando ya tiene contenido */
-        .input-container input:not(:placeholder-shown)+label,
-        .input-container textarea:not(:placeholder-shown)+label {
-            top: 0;
-            transform: translateY(-50%);
-            font-size: 12px;
-            color: #007bff;
-        }
-
-        .fila.mitad .input-container input {
-    padding: 20px 15px;
-    font-size: 16px;
-}
-
-        .fila.mitad .input-container {
-            width: 48%;
-        }
-
-        .fila:not(.mitad) .input-container {
-            width: 100%;
-        }
-
-        .input-container input,
-        .input-container textarea {
-            box-sizing: border-box;
         }
 
         .contenedor-form {
             max-width: 1100px;
             margin: auto;
+        }
+
+        .contenedor-form form {
+            width: 100%;
         }
 
         .contenedor-form .fila {
@@ -557,32 +504,74 @@
             justify-content: space-between;
         }
 
-        .contenedor-form input,
-        .contenedor-form textarea {
-            padding: 20px;
-            border-radius: 20px;
-            border: none;
-            border: 1px solid #919191;
-        }
-
-        .contenedor-form .mitad input {
-            width: 48%;
-        }
-
-        .contenedor-form .input-full {
+        /* CONTENEDOR DEL INPUT */
+        .input-container {
+            position: relative;
             width: 100%;
         }
 
-        .titulo-seccion {
-            text-align: center;
-            font-size: 22px;
-            text-transform: uppercase;
-            color: #111135;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
+        /* INPUTS Y TEXTAREA */
+        .input-container input,
+        .input-container textarea {
+            width: 100%;
+            padding: 20px 15px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: 1px solid #919191;
+            background: #f3f3f3;
+            color: #000;
+            font-size: 16px;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+            transition: .3s;
         }
 
+        /* ETIQUETAS */
+        .input-container label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            padding: 0 5px;
+            color: #777;
+            transition: .3s;
+            pointer-events: none;
+        }
+
+        /* ETIQUETA DEL TEXTAREA */
+        .input-container textarea+label {
+            top: 25px;
+        }
+
+        /* EFECTO FLOTANTE */
+        .input-container input:focus+label,
+        .input-container textarea:focus+label,
+        .input-container input:not(:placeholder-shown)+label,
+        .input-container textarea:not(:placeholder-shown)+label {
+            top: 0;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: #000;
+        }
+
+        /* BORDE AL SELECCIONAR */
+        .input-container input:focus,
+        .input-container textarea:focus {
+            border-color: #000;
+        }
+
+        /* NOMBRE Y CORREO */
+        .fila.mitad .input-container {
+            width: 48%;
+        }
+
+        /* TEMA Y MENSAJE */
+        .fila:not(.mitad) .input-container {
+            width: 100%;
+        }
+
+        /* BOTÓN */
         .btn-enviar {
             display: block;
             margin: auto;
@@ -591,12 +580,38 @@
             padding: 10px 15px !important;
             background-color: #00c3ff;
             color: #000;
+            border: 1px solid #919191;
+            border-radius: 20px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .btn-enviar:hover {
             background-color: #fff;
             color: #00c3ff;
         }
+
+        /* CELULAR */
+        @media screen and (max-width: 800px) {
+
+            #contacto {
+                padding: 50px 15px;
+            }
+
+            #contacto .contenedor-form .mitad {
+                display: block;
+            }
+
+            #contacto .contenedor-form .mitad .input-container {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+
+
+
+
+
 
         /* *********************/
         /* seccion F O O T E R */
